@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-def uniq_add(my_list=[]):
-    add = 0
-    if my_list:
-        for i in set(my_list):
-            add += i
-    return add
+def common_elements(set_1, set_2):
+    if set_1 is None or set_2 is None:
+        return set()
+    return set_1 & set_2
